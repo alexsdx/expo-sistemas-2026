@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expo Sistemas 2026 · Feria de Innovación y Proyectos Tecnológicos</title>
+  <meta name="description" content="Expo Sistemas 2026: feria de innovación y proyectos tecnológicos de Ingeniería en Sistemas Computacionales del Instituto Tecnológico de Ciudad Madero. Lunes 7 de diciembre de 2026, 9:00 a.m. Consulta las bases y registra tu proyecto.">
+  <meta name="theme-color" content="#050a24">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Expo Sistemas 2026">
+  <meta property="og:description" content="De la idea al código, del código a la innovación. Lunes 7 de diciembre de 2026, Unidad Académica de Sistemas, Campus II. Registra tu proyecto.">
+  <meta property="og:url" content="https://alexsdx.github.io/expo-sistemas-2026/">
+  <meta property="og:locale" content="es_MX">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#inicio" aria-label="Expo Sistemas 2026, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 28.1 9v14L16 30 3.9 23V9z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 12-4 4 4 4m6-8 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>EXPO SISTEMAS <b>2026</b></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks" aria-label="Secciones">
+        <a href="#categorias">Categorías</a>
+        <a href="#bases">Bases</a>
+        <a href="#programa">Programa</a>
+        <a href="#evaluacion">Evaluación</a>
+        <a href="#premios">Premios</a>
+        <a href="#fechas">Fechas</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav__cta" href="#registro">Regístrate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="hero__inst load" style="--d:0">
+          <span>Instituto Tecnológico de Ciudad Madero</span>
+          <span>Departamento de Sistemas y Computación</span>
+          <span class="hero__carrera">Ingeniería en Sistemas Computacionales</span>
+        </p>
+
+        <div class="logo load" style="--d:1">
+          <div class="logo__orbit" aria-hidden="true"></div>
+          <h1 class="logo__text">
+            <span class="logo__l1">Expo</span>
+            <span class="logo__l2">Sistemas</span>
+            <span class="logo__l3">2026</span>
+          </h1>
+        </div>
+
+        <p class="hero__tag load" style="--d:2">Feria de Innovación y Proyectos Tecnológicos</p>
+
+        <p class="hero__lema load" style="--d:3">«De la idea al código,<br>del código a la <em>innovación</em>»</p>
+
+        <ul class="datos load" style="--d:4">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4m8-4v4"/></svg>
+            <div><small>Fecha</small><strong>Lunes 7 de diciembre de 2026</strong></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><small>Hora</small><strong>9:00 a.m.</strong></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.900 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+            <div><small>Lugar</small><strong>Unidad Académica de Sistemas, Campus II</strong></div>
+          </li>
+        </ul>
+
+        <div class="hero__cta load" style="--d:5">
+          <a class="btn btn--primary" href="#registro" data-registro>
+            <span data-registro-texto>Registra tu proyecto</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#bases">Leer las bases</a>
+        </div>
+
+        <div class="cuenta load" style="--d:6" id="cuenta" aria-live="off">
+          <p class="cuenta__titulo" id="cuentaTitulo">Faltan para la expo</p>
+          <div class="cuenta__nums">
+            <div><b id="cDias">--</b><span>días</span></div>
+            <div><b id="cHoras">--</b><span>horas</span></div>
+            <div><b id="cMin">--</b><span>min</span></div>
+            <div><b id="cSeg">--</b><span>seg</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVITACIÓN ============ -->
+    <section class="sec sec--intro" id="acerca">
+      <div class="wrap intro">
+        <div class="intro__texto reveal">
+          <p class="eyebrow">// Convocatoria</p>
+          <h2>Muestra lo que sabes construir</h2>
+          <p class="lead">El Capítulo Estudiantil ACM y el Departamento de Sistemas y Computación invitan a todo el alumnado de Ingeniería en Sistemas Computacionales a presentar sus proyectos en la <strong>Expo Sistemas 2026</strong>: una mañana para mostrar tu trabajo, recibir retroalimentación de un jurado y competir por premios.</p>
+          <p>Si este semestre hiciste un proyecto para una materia, ya tienes casi todo lo que necesitas. Si tienes un proyecto propio, también es bienvenido.</p>
+        </div>
+        <aside class="manifiesto reveal">
+          <p class="manifiesto__k">Lo que buscamos</p>
+          <p class="manifiesto__t">Resolver <span>problemas</span>.</p>
+          <p>Eres libre de usar <strong>inteligencia artificial</strong> y la tecnología que quieras. Lo que cuenta es a quién ayudas y que tu solución funcione. Solo te pedimos decir en el registro qué herramientas usaste.</p>
+        </aside>
+      </div>
+
+      <div class="wrap cifras reveal">
+        <div><b>6</b><span>categorías</span></div>
+        <div><b>1–3</b><span>integrantes por equipo</span></div>
+        <div><b>3+2</b><span>minutos ante el jurado</span></div>
+        <div><b>$0</b><span>costo de participación</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORÍAS ============ -->
+    <section class="sec" id="categorias">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 01 · Categorías</p>
+          <h2>¿En cuál compite tu proyecto?</h2>
+          <p>Elige la categoría que mejor describa lo principal de tu proyecto. Pueden participar estudiantes de cualquier semestre en cualquiera de ellas.</p>
+        </header>
+
+        <div class="cats">
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="22" rx="2"/><path d="M4 38h40M21 17l-5 4 5 4m6-8 5 4-5 4"/></svg></div>
+            <h3>Desarrollo de software</h3>
+            <p>Aplicaciones web, móviles o de escritorio, videojuegos y sistemas para escuelas, negocios u organizaciones.</p>
+          </article>
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v32M24 12c-3-5-12-3-11 4-5 1-6 8-2 11-2 5 3 10 8 8 1 3 5 3 5 0M24 12c3-5 12-3 11 4 5 1 6 8 2 11 2 5-3 10-8 8-1 3-5 3-5 0"/><path d="M17 20h4m6 8h4m-14 2h3m7-12h3"/></svg></div>
+            <h3>Inteligencia artificial</h3>
+            <p>Agentes y asistentes, modelos de clasificación o predicción, visión por computadora y procesamiento de lenguaje.</p>
+          </article>
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="16" width="24" height="18" rx="4"/><circle cx="19" cy="24" r="2.500"/><circle cx="29" cy="24" r="2.500"/><path d="M24 16v-6m0 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM19 30h10M8 22v6m32-6v6M18 34v6h12v-6"/></svg></div>
+            <h3>Robótica e IoT</h3>
+            <p>Robots, sensores, sistemas embebidos, automatización y dispositivos conectados que interactúan con el mundo físico.</p>
+          </article>
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 9 12v11c0 9 6.500 15.500 15 19 8.500-3.500 15-10 15-19V12z"/><rect x="18" y="23" width="12" height="9" rx="1.500"/><path d="M20.500 23v-3a3.500 3.500 0 0 1 7 0v3"/></svg></div>
+            <h3>Redes y ciberseguridad</h3>
+            <p>Infraestructura y monitoreo de redes, herramientas de protección, criptografía y análisis de seguridad con fines defensivos.</p>
+          </article>
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v8c0 2.800 5.800 5 13 5s13-2.200 13-5v-8M11 20v8c0 2.800 5.800 5 13 5s13-2.200 13-5v-8M11 28v8c0 2.800 5.800 5 13 5s13-2.200 13-5v-8"/></svg></div>
+            <h3>Ciencia de datos</h3>
+            <p>Análisis y visualización de datos, tableros, modelos estadísticos y bases de datos que ayudan a tomar decisiones.</p>
+          </article>
+          <article class="cat reveal">
+            <div class="hex"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M17 31a11 11 0 1 1 14 0c-1.500 1.300-2 2.500-2 4H19c0-1.500-.5-2.700-2-4zM19 40h10M21 44h6"/><circle cx="24" cy="22" r="3.500"/><path d="M24 15v3.500m0 7V29m-7-7h3.500m7 0H31"/></svg></div>
+            <h3>Innovación tecnológica</h3>
+            <p>Propuestas que combinan varias áreas o no caben en las demás: ideas nuevas con base tecnológica y un prototipo que las respalde.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BASES ============ -->
+    <section class="sec sec--alt" id="bases">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 02 · Bases</p>
+          <h2>Bases de la convocatoria</h2>
+          <p>Léelas completas antes de registrarte. Son pocas y son claras.</p>
+        </header>
+
+        <div class="bases">
+          <article class="panel reveal">
+            <h3><span class="num">A</span>¿Quién puede participar?</h3>
+            <ul class="lista">
+              <li>Estudiantes de <strong>Ingeniería en Sistemas Computacionales</strong> del Instituto Tecnológico de Ciudad Madero, de cualquier semestre.</li>
+              <li>De forma <strong>individual o en equipos de hasta 3 personas</strong>.</li>
+              <li>Cada estudiante puede participar con <strong>un solo proyecto</strong>.</li>
+              <li>La participación <strong>no tiene costo</strong>.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal">
+            <h3><span class="num">B</span>¿Qué proyectos se aceptan?</h3>
+            <ul class="lista">
+              <li>Proyectos de software, o de hardware con software, <strong>hechos por quienes los presentan</strong>.</li>
+              <li>Proyectos de una materia de este semestre o proyectos propios desarrollados durante 2026.</li>
+              <li>Deben tener un <strong>prototipo que funcione</strong> y pueda mostrarse en vivo el día de la expo. No se aceptan proyectos que solo existan como idea o como diapositivas.</li>
+              <li>Deben inscribirse en una de las <a href="#categorias">seis categorías</a>.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal">
+            <h3><span class="num">C</span>Reglas</h3>
+            <ul class="lista">
+              <li>El proyecto debe ser trabajo propio. Se permite usar bibliotecas, servicios y herramientas de inteligencia artificial, siempre que se <strong>declare en el registro</strong> qué se usó y para qué.</li>
+              <li>Al menos una persona del equipo debe permanecer en el stand durante la expo, salvo cuando el equipo esté ante el jurado.</li>
+              <li>No se permite mostrar <strong>datos personales reales</strong> de terceros. Usa datos de prueba o anonimizados.</li>
+              <li>En el registro, el equipo indica si autoriza que las fotos y videos del evento en los que aparezca se publiquen en los medios de la carrera y del capítulo.</li>
+              <li>La decisión del jurado es inapelable.</li>
+              <li>La participación es independiente de la calificación de cualquier materia.</li>
+            </ul>
+          </article>
+
+          <article class="panel panel--pasos reveal">
+            <h3><span class="num">D</span>¿Cómo me registro?</h3>
+            <ol class="pasos">
+              <li><b>Llena el formulario</b> antes del <strong>viernes 27 de noviembre de 2026, 23:59 h</strong>.</li>
+              <li><b>Un solo registro por proyecto</b>, con los datos de todo el equipo.</li>
+              <li><b>Espera la lista.</b> El miércoles 2 de diciembre se publicarán aquí los proyectos aceptados, con su número de stand y su turno ante el jurado.</li>
+            </ol>
+            <a class="btn btn--primary btn--sm" href="#registro" data-registro>
+              <span data-registro-texto>Ir al registro</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMA ============ -->
+    <section class="sec" id="programa">
+      <div class="wrap programa">
+        <div>
+          <header class="sec__head reveal">
+            <p class="eyebrow">// 03 · Programa</p>
+            <h2>Así será el día de la expo</h2>
+            <p>Lunes 7 de diciembre de 2026 · Unidad Académica de Sistemas, Campus II</p>
+          </header>
+          <ol class="agenda">
+            <li class="reveal"><time>8:00 – 9:00</time><div><h3>Montaje</h3><p>Montaje de stands y prueba de equipos.</p></div></li>
+            <li class="reveal"><time>9:00 – 9:15</time><div><h3>Inauguración</h3><p>Bienvenida y presentación del jurado.</p></div></li>
+            <li class="reveal"><time>9:15 – 11:45</time><div><h3>Stands abiertos</h3><p>Visita del público, evaluación del jurado y entrevistas en video.</p></div></li>
+            <li class="reveal"><time>11:45 – 12:30</time><div><h3>Presentaciones finales</h3><p>Los proyectos pasan al proyector ante el jurado.</p></div></li>
+            <li class="reveal"><time>12:30 – 13:00</time><div><h3>Premiación</h3><p>Entrega de premios y foto general.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="dia">
+          <article class="mini reveal">
+            <h3>Tu stand</h3>
+            <p>Cada proyecto tendrá una mesa con conexión eléctrica. Ahí muestras tu proyecto funcionando a visitantes, docentes y jurado. Lleva tu computadora y todo lo que tu demostración necesite.</p>
+          </article>
+          <article class="mini reveal">
+            <h3>El jurado</h3>
+            <p>Todos los proyectos serán evaluados. Tendrás <strong>3 minutos</strong> para explicar y demostrar tu proyecto y <strong>2 minutos</strong> para responder preguntas.</p>
+          </article>
+          <article class="mini reveal">
+            <h3>El proyector</h3>
+            <p>Según el número de proyectos registrados, pasarán al proyector todos los proyectos o solo los finalistas de cada categoría. El formato definitivo se avisará junto con la lista de stands y turnos.</p>
+          </article>
+          <article class="mini reveal">
+            <h3>Las entrevistas</h3>
+            <p>Un equipo del capítulo pasará por los stands para grabar una entrevista breve sobre cada proyecto. Los videos se publicarán en las redes de la carrera.</p>
+          </article>
+          <article class="mini mini--aviso reveal">
+            <h3>Prepara un plan B</h3>
+            <p>Graba un video corto de tu proyecto funcionando y tenlo a la mano. Si el internet o el equipo fallan durante tu turno, podrás mostrar el video.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVALUACIÓN ============ -->
+    <section class="sec sec--alt" id="evaluacion">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 04 · Evaluación</p>
+          <h2>¿Qué califica el jurado?</h2>
+          <p>Cada criterio se califica de 1 a 5. La calificación final es sobre 100 puntos.</p>
+        </header>
+
+        <div class="rubrica">
+          <article class="crit reveal" style="--p:30">
+            <div class="crit__top"><h3>Problema e impacto</h3><b>30</b></div>
+            <div class="crit__bar"><i></i></div>
+            <p>El proyecto atiende una necesidad real y queda claro a quién beneficia.</p>
+          </article>
+          <article class="crit reveal" style="--p:30">
+            <div class="crit__top"><h3>Funcionamiento</h3><b>30</b></div>
+            <div class="crit__bar"><i></i></div>
+            <p>El prototipo funciona en vivo y hace lo que el equipo dice que hace.</p>
+          </article>
+          <article class="crit reveal" style="--p:20">
+            <div class="crit__top"><h3>Calidad técnica</h3><b>20</b></div>
+            <div class="crit__bar"><i></i></div>
+            <p>El trabajo técnico es sólido y está bien resuelto.</p>
+          </article>
+          <article class="crit reveal" style="--p:20">
+            <div class="crit__top"><h3>Comunicación</h3><b>20</b></div>
+            <div class="crit__bar"><i></i></div>
+            <p>La explicación es clara, ordenada y respeta el tiempo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREMIOS ============ -->
+    <section class="sec" id="premios">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 05 · Premios</p>
+          <h2>Premios y reconocimientos</h2>
+          <p>Los premios se darán a conocer antes del evento.</p>
+        </header>
+
+        <div class="premios">
+          <article class="premio premio--main reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 8h18v12a9 9 0 0 1-18 0zM15 12H8c0 6 3 9 7.500 9.500M33 12h7c0 6-3 9-7.500 9.500M24 29v7m-7 4h14m-12-4h10"/></svg>
+            <h3>Primer lugar por categoría</h3>
+            <p>Un primer lugar en cada una de las seis categorías.</p>
+            <ul class="chips">
+              <li>Desarrollo de software</li><li>Inteligencia artificial</li><li>Robótica e IoT</li>
+              <li>Redes y ciberseguridad</li><li>Ciencia de datos</li><li>Innovación tecnológica</li>
+            </ul>
+          </article>
+          <article class="premio reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="5"/><circle cx="33" cy="18" r="4"/><path d="M6 38c0-7 5-11 11-11s11 4 11 11M30 27c6-.5 12 3 12 10"/></svg>
+            <h3>Impacto social</h3>
+            <p>El proyecto que mejor atiende una necesidad de la comunidad.</p>
+          </article>
+          <article class="premio reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="14" width="20" height="20" rx="3"/><path d="M20 21h8v6h-8zM19 8v6m5-6v6m5-6v6M19 34v6m5-6v6m5-6v6M8 19h6m-6 5h6m-6 5h6m20-10h6m-6 5h6m-6 5h6"/></svg>
+            <h3>Mejor proyecto con IA</h3>
+            <p>Para el proyecto que mejor aprovecha la inteligencia artificial.</p>
+          </article>
+          <article class="premio reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S8 30.500 8 19a8.500 8.500 0 0 1 16-4 8.500 8.500 0 0 1 16 4c0 11.500-16 21-16 21z"/></svg>
+            <h3>Premio del público</h3>
+            <p>Lo eligen las personas asistentes con su voto durante la expo.</p>
+          </article>
+          <article class="premio reveal">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="24" rx="2"/><path d="M15 16h18m-18 6h10"/><circle cx="32" cy="32" r="5"/><path d="m29 36-1.500 7 4.500-2.500 4.500 2.500L35 36"/></svg>
+            <h3>Constancia de participación</h3>
+            <p>Para todas las personas que presenten su proyecto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FECHAS ============ -->
+    <section class="sec sec--alt" id="fechas">
+      <div class="wrap">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 06 · Fechas</p>
+          <h2>Fechas clave</h2>
+        </header>
+
+        <ol class="linea">
+          <li class="reveal" data-fecha="2026-11-28T00:00:00-06:00">
+            <time>Vie 27 nov · 23:59 h</time>
+            <h3>Cierre del registro</h3>
+            <p>Último momento para enviar el formulario.</p>
+          </li>
+          <li class="reveal" data-fecha="2026-12-03T00:00:00-06:00">
+            <time>Mié 2 dic</time>
+            <h3>Stands y turnos</h3>
+            <p>Publicación de proyectos aceptados, stands, turnos y formato.</p>
+          </li>
+          <li class="reveal" data-fecha="2026-12-05T00:00:00-06:00">
+            <time>Vie 4 dic</time>
+            <h3>Prueba de equipo</h3>
+            <p>Opcional: prueba tu demostración en el lugar del evento.</p>
+          </li>
+          <li class="reveal" data-fecha="2026-12-07T09:00:00-06:00">
+            <time>Lun 7 dic · 8:00 h</time>
+            <h3>Montaje de stands</h3>
+            <p>Llega con tiempo para instalar y probar.</p>
+          </li>
+          <li class="reveal linea__main" data-fecha="2026-12-07T13:00:00-06:00">
+            <time>Lun 7 dic · 9:00 h</time>
+            <h3>Expo Sistemas 2026</h3>
+            <p>Unidad Académica de Sistemas, Campus II.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ REGISTRO ============ -->
+    <section class="sec sec--registro" id="registro">
+      <div class="wrap">
+        <div class="registro reveal">
+          <div class="registro__hex" aria-hidden="true"></div>
+          <p class="eyebrow">// Registro</p>
+          <h2 id="registroTitulo">Registra tu proyecto</h2>
+          <p class="registro__p" id="registroDetalle">El registro cierra el <strong>viernes 27 de noviembre de 2026 a las 23:59 h</strong>. Ten a la mano el nombre del proyecto, su categoría, una descripción breve del problema que resuelve y los datos de tu equipo.</p>
+          <a class="btn btn--primary btn--lg" id="registroBoton" href="#registro" data-registro data-principal>
+            <span data-registro-texto>Abrir formulario de registro</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <p class="registro__nota" id="registroNota">El formulario se abre en Google Forms.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="sec" id="preguntas">
+      <div class="wrap wrap--narrow">
+        <header class="sec__head reveal">
+          <p class="eyebrow">// 07 · Preguntas frecuentes</p>
+          <h2>Antes de que preguntes</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary>¿Puedo participar con el proyecto que hice para una materia?</summary>
+            <p>Sí. Puede ser un proyecto de una materia de este semestre o un proyecto propio desarrollado durante 2026. La expo es independiente de la calificación de la materia.</p>
+          </details>
+          <details>
+            <summary>¿Puedo usar inteligencia artificial?</summary>
+            <p>Sí, con toda libertad. Lo que buscamos es resolver problemas. Solo declara en el registro qué herramientas usaste y para qué.</p>
+          </details>
+          <details>
+            <summary>Voy en primer semestre, ¿puedo participar?</summary>
+            <p>Sí. Puede participar cualquier estudiante de la carrera, de cualquier semestre y en cualquier categoría.</p>
+          </details>
+          <details>
+            <summary>¿Cuántas personas puede tener un equipo?</summary>
+            <p>Hasta 3. También puedes participar de forma individual. Cada estudiante participa con un solo proyecto.</p>
+          </details>
+          <details>
+            <summary>Mi proyecto todavía no está terminado, ¿me registro?</summary>
+            <p>Sí, siempre que para el 7 de diciembre tengas un prototipo que funcione y puedas mostrarlo en vivo. En el formulario indicas en qué estado está hoy.</p>
+          </details>
+          <details>
+            <summary>No sé en qué categoría va mi proyecto</summary>
+            <p>Elige la que describa lo principal de lo que hace. Si combina varias áreas o no cabe en ninguna, regístralo en Innovación tecnológica.</p>
+          </details>
+          <details>
+            <summary>¿Qué tengo que llevar el día de la expo?</summary>
+            <p>Tu computadora y todo lo que tu demostración necesite. Tendrás una mesa con conexión eléctrica. Si necesitas internet, más contactos o espacio adicional, indícalo en el registro.</p>
+          </details>
+          <details>
+            <summary>¿Tiene costo?</summary>
+            <p>No. Participar y asistir no tiene costo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="pie" id="contacto">
+    <div class="wrap pie__inner">
+      <div>
+        <p class="pie__logo">EXPO SISTEMAS <b>2026</b></p>
+        <p>Feria de Innovación y Proyectos Tecnológicos</p>
+        <p class="pie__lema">«De la idea al código, del código a la innovación»</p>
+      </div>
+      <div>
+        <h3>Organiza</h3>
+        <p>Capítulo Estudiantil ACM<br>Departamento de Sistemas y Computación<br>Instituto Tecnológico de Ciudad Madero</p>
+      </div>
+      <div>
+        <h3>Dudas</h3>
+        <p id="contactoTexto">Acércate a cualquier integrante del Capítulo Estudiantil ACM.</p>
+      </div>
+    </div>
+    <p class="pie__fin">Ingeniería en Sistemas Computacionales · Ciudad Madero, Tamaulipas · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
