@@ -188,6 +188,24 @@ ul, ol { padding: 0; list-style: none; }
   display: flex; flex-direction: column; align-items: center; text-align: center;
 }
 
+/* Logotipos institucionales sobre placa blanca (conservan sus colores) */
+.logos {
+  display: inline-flex; align-items: center; gap: 18px;
+  padding: 10px 22px; margin-bottom: 20px;
+  background: #fff;
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  filter: drop-shadow(0 0 16px rgba(34, 211, 255, .45));
+}
+.logos img { height: 66px; width: auto; }
+.logos span { width: 1px; align-self: stretch; background: #c5cde6; }
+.logos--pie { padding: 8px 16px; gap: 14px; margin-bottom: 18px; filter: none; }
+.logos--pie img { height: 44px; }
+@media (max-width: 520px) {
+  .logos { gap: 12px; padding: 8px 14px; }
+  .logos img { height: 44px; }
+  .logos--pie img { height: 38px; }
+}
+
 .hero__inst { display: grid; gap: 2px; font-size: .82rem; color: var(--muted); letter-spacing: .02em; }
 .hero__inst span:first-child { color: #fff; font-weight: 600; font-size: .98rem; }
 .hero__carrera {
