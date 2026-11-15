@@ -18,7 +18,7 @@ const CONTACTO = "";
 // Fechas (hora del centro de México, UTC-6).
 const CIERRE_REGISTRO = new Date("2026-11-28T00:00:00-06:00"); // fin del 27 de noviembre
 const INICIO_EVENTO = new Date("2026-12-07T09:00:00-06:00");
-const FIN_EVENTO = new Date("2026-12-07T13:00:00-06:00");
+const FIN_EVENTO = new Date("2026-12-07T15:00:00-06:00");
 
 /* ------------------------------------------------------------ */
 
@@ -84,6 +84,8 @@ function pintarRegistro() {
   });
 
   if (cerrado) {
+    // Tras el cierre ya no tiene sentido invitar a empezar un proyecto.
+    $$('#empieza, [data-empieza], a[href="#empieza"]').forEach((el) => { el.hidden = true; });
     titulo.textContent = "El registro ya cerró";
     detalle.innerHTML = "El registro de proyectos cerró el <strong>viernes 27 de noviembre de 2026</strong>. ¡Te esperamos el lunes 7 de diciembre para conocer los proyectos!";
     nota.textContent = "La lista de stands y turnos se publica en este sitio.";
