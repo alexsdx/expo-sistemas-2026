@@ -9,7 +9,7 @@
 // Enlace del formulario de Google Forms (el "enlace para alumnos" que
 // imprime el script de Apps Script). Mientras esté vacío, los botones de
 // registro muestran "Registro disponible muy pronto".
-const REGISTRO_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdpUBA62ErwF06Nsgp2m_47qRba0EClNnXsHc40HGKb5FvH8w/viewform";
+const REGISTRO_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd-aXR1J59yGKvjqS3DULU3XkwTsxgL9x-Vsbn6Y-oM1TjRWQ/viewform";
 
 // Contacto para dudas. Ejemplo: "Escríbenos a correo@ejemplo.mx" o
 // "Instagram: @capitulo". Si queda vacío se usa el texto de index.html.
