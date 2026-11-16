@@ -11,9 +11,9 @@
 // registro muestran "Registro disponible muy pronto".
 const REGISTRO_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd-aXR1J59yGKvjqS3DULU3XkwTsxgL9x-Vsbn6Y-oM1TjRWQ/viewform";
 
-// Contacto para dudas. Ejemplo: "Escríbenos a correo@ejemplo.mx" o
-// "Instagram: @capitulo". Si queda vacío se usa el texto de index.html.
-const CONTACTO = "";
+// Correo de contacto para dudas (aparece en el pie como enlace "mailto").
+// Si queda vacío se usa el texto de index.html.
+const CONTACTO = "alejandro.ep@cdmadero.tecnm.mx";
 
 // Fechas (hora del centro de México, UTC-6).
 const CIERRE_REGISTRO = new Date("2026-11-28T00:00:00-06:00"); // fin del 27 de noviembre
@@ -97,7 +97,12 @@ pintarRegistro();
 
 /* ---------- Contacto ---------- */
 if (CONTACTO.trim() !== "") {
-  $("#contactoTexto").textContent = CONTACTO;
+  const correo = CONTACTO.trim();
+  const p = $("#contactoTexto");
+  const a = document.createElement("a");
+  a.href = "mailto:" + correo + "?subject=" + encodeURIComponent("Dudas Expo Sistemas 2026");
+  a.textContent = correo;
+  p.replaceChildren("Escríbenos a ", a, ".");
 }
 
 /* ---------- Cuenta regresiva ---------- */
