@@ -463,7 +463,7 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.2rem; line-heig
 @media (max-width: 900px) { .programa { grid-template-columns: 1fr; } }
 
 /* ---------------- Evaluación ---------------- */
-.rubrica { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.rubrica { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .crit { padding: 26px 26px 24px; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); clip-path: var(--cut); }
 .crit__top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .crit__top h3 { font-style: italic; font-size: 1.3rem; }
@@ -586,3 +586,9 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.2rem; line-heig
 
 /* Sin JavaScript, todo visible */
 .no-js .reveal { opacity: 1; transform: none; }
+
+/* ---------------- Premios: tres premios + constancia ---------------- */
+.premio--top { box-shadow: inset 0 0 0 1.5px rgba(255, 216, 35, .55); background: linear-gradient(160deg, rgba(255, 216, 35, .10), rgba(139, 61, 255, .16) 70%); }
+.premio--top svg { stroke: var(--yellow); filter: drop-shadow(0 0 10px rgba(255, 216, 35, .7)); }
+.premios__como { margin-top: 20px; }
+.crit__top + p { margin-top: 8px; }
